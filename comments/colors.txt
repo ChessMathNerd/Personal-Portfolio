@@ -1,0 +1,18 @@
+COLOR-CODES
+
+Blues
+#2c42be
+#4557d1
+
+Teels
+#3193c4
+#45b3d1
+
+Greens
+#2cbe44
+#45d14c
+
+
+TEXTS
+
+button text: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif

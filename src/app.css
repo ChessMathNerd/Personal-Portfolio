@@ -1,0 +1,64 @@
+.app-header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border-bottom: solid grey 1px;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    height: 50px;
+    background: repeating-linear-gradient(
+        45deg,
+        #4557d1,
+        #4557d1 40px,
+        #2c42be 80px,
+        #2c42be 120px,
+        #4557d1 160px
+    );
+    border-bottom: solid grey 1px;
+    padding-inline: 5px;
+    display: flex;
+}
+
+.navbar-ham-button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-block: auto;
+}
+
+.navbar-ham-button:hover {
+    background: inherit;
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: -200px;
+    margin-top: 50px;
+    height: 100vh;
+    width: 200px;
+    background-color: lightgray;
+    z-index: 2;
+    transition: .3s;
+    border-right: solid lightgray 1px;
+    border-top: solid grey 1px;
+}
+
+.sidebar-menu-label {
+    border: none;
+    background-color: lightgray;
+    height: 50px;
+}
+
+.sidebar-button {
+    border: none;
+    height: 50px;
+}
+
+.welcome {
+    transition: .3s;
+}

@@ -1,0 +1,14 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+}
+
+p {
+    margin-top: 20px;
+    width: 90%;
+    margin-inline: auto;
+}
