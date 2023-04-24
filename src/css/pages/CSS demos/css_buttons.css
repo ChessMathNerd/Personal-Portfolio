@@ -1,0 +1,355 @@
+/* General css */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.css-buttons-wrapper {
+    margin-bottom: 200px;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 20px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.css-h2 {
+    width: fit-content;
+    margin-left: 50px;
+}
+
+.css-button {
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+/* button package css */
+.css-buttons {
+    width: fit-content;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 50px;
+}
+
+
+
+
+/* // Blues
+// #2c42be
+// #4557d1
+
+// Teels
+// #3193c4
+// #45b3d1
+
+// Greens
+// #2cbe44
+// #45d14c */
+/* button css */
+
+/* standard */
+.css-standard {
+    width: 100px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.css-standard:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+.css-standard-1 {
+    background-color: #4557d1;
+}
+
+.css-standard-2 {
+    background-color: #45b3d1;
+}
+
+.css-standard-3 {
+    background-color: #45d14c;
+}
+
+.css-standard-4 {
+    cursor: not-allowed;
+    box-shadow: none;
+    background-color: red;
+    opacity: .3;
+}
+
+.css-standard-4:hover {
+    opacity: .3;
+}
+
+
+
+
+
+/* shaped */
+.css-shaped {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.css-shaped:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+.css-shaped-1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #45d14c;
+}
+
+.css-shaped-2 {
+    width: 100px;
+    height: 50px;
+    background-color: #4557d1;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+.css-shaped-3 {
+    width: 100px;
+    height: 50px;
+    background-color: #45b3d1;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.css-shaped-undo {
+    -ms-transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    display: inline-block;
+}
+
+
+
+
+
+/* pressable */
+.css-pressable {
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.css-pressable:active {
+    box-shadow: 0 0px;
+    transform: translateY(7px);
+}
+
+.css-pressable-1 {
+    height: 43px;
+    width: 100px;
+    background-color: #45b3d1;
+    box-shadow: 0 7px #3193c4;
+}
+
+.css-pressable-2 {
+    height: 43px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #45d14c;
+    box-shadow: 0 7px #2cbe44;
+}
+
+.css-pressable-3 {
+    height: 43px;
+    width: 100px;
+    border-radius: 22px;
+    background-color: #4557d1;
+    box-shadow: 0 7px #2c42be;
+}
+
+
+
+
+
+/* image button css */
+.css-image {
+    padding: 0px;
+    border: none;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.css-image-1:hover .css-image-1-img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.css-image-2:hover .css-image-2-img {
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+
+.css-image-1-img, .css-image-2-img, .css-image-3-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.css-image-div {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.css-image-3 {
+    height: 200px;
+    margin-block: auto;
+    position: relative;
+}
+
+.css-image-wrapper {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.css-image-3-img:hover {
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.css-image-div-text {
+    font-size: 25px;
+    font-weight: bold;
+    opacity: .5;
+}
+
+.css-image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    pointer-events: none;
+}
+
+
+
+
+
+/* special buttons */
+/* gradient buttons */
+.css-special-gradient {
+    width: 180px;
+    height: 80px;
+    border: none;
+    border-radius: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.css-special-gradient:hover {
+    transition: .3s;
+    opacity: .8;
+}
+
+.css-special-gradient-1 {
+    background: repeating-linear-gradient(
+        45deg,
+        #4557d1,
+        #4557d1 30px,
+        #2c42be 60px,
+        #2c42be 90px,
+        #4557d1 120px
+    )
+}
+
+.css-special-gradient-2 {
+    background: repeating-linear-gradient(
+        0deg,
+        #d80e0e,
+        #e74e4e 80px,
+        #d80e0e 160px
+    )
+}
+
+.css-special-gradient-3 {
+    background: radial-gradient(
+        #b40db1,
+        #b40db1 40px,
+        #e457ca 120px
+    )
+}
+
+/* icon buttons */
+.css-special-icon {
+    width: fit-content;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+}
+
+.css-special-icon:hover {
+    transition: .3s;
+    opacity: .8;
+}
+
+.css-special-icon-img {
+    height: 20px;
+    width: 20px;
+    filter: invert(1);
+    object-fit: cover;
+    margin-block: auto;
+}
+
+.css-special-icon-text {
+    margin-block: auto;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: white;
+}
+
+.css-special-icon-wrap {
+    display: flex;
+}
+
+.css-special-icon-1 {
+    background-color: #4557d1;
+}
+
+.css-special-icon-2 {
+    background-color: #e72727;
+}
+
+.css-special-icon-3 {
+    background-color: #e128bf;
+}

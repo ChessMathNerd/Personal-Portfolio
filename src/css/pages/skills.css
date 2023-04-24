@@ -1,0 +1,55 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.skill-wrapper {
+    overflow-y: auto;
+}
+
+
+
+
+
+/* Skill section CSS */
+.skill-header {
+    width: 90%;
+    margin-inline: auto;
+    display: flex;
+    border-bottom: solid grey 1px;
+}
+
+.skill-icon-button {
+    width: 22px;
+    height: 22px;
+    margin-block: auto;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+
+
+
+
+
+/* general CSS */
+h1 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 20px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+h2 {
+    width: fit-content;
+    margin-right: 20px;
+}
+
+.skill-paragraph {
+    height: 0px;
+    transition: .3s;
+    overflow: hidden;
+}
