@@ -56,11 +56,11 @@ const Skills = () => {
                 <img src={(para[1] === 0) ? Constants.circle_plus : Constants.circle_minus} 
                     alt="Not found" className="skill-icon-button" onClick={() => change_paragraph(1)}/>
             </div>
-            <p className="skill-paragraph" id="skill-paragraph-2">Java is always my go-to language for any non-web related project, 
+            <p className="skill-paragraph" id="skill-paragraph-2">Java is always my go-to language for any non-website related project, 
             whether it be networking, UI, file IO, or just algorithms and data manipulation. I have used this language frequently for the past 
             4 years, and am probably more comfortable with it than any other soft skill I have. Skills in this language include
             arrays and other data structures, classes, interfaces, inheritance, modular design, JavaFX, and some work with SQL and servlets. 
-            I am also interested in learing the SpringBoot framework, but as of right now I have very little knowledge of it, and use java mostly 
+            I am also interested in learning the SpringBoot framework, but as of right now I have very little knowledge of it, and use java mostly 
             for non web-related application ideas.
             </p>
 
@@ -126,7 +126,7 @@ const Skills = () => {
             </div>
             <p className="skill-paragraph" id="skill-paragraph-7">
                 My other skills include IDE experience with Intellij, Eclipse, and Visual Studio Code, my all time favorite IDE. I also have 
-                limited experience with SQL querying, C# and C, postman, insomnia, git version control, github desktop, Microsoft visual studio.
+                limited experience with SQL querying, C# and C, postman, insomnia, git version control, github desktop, and Microsoft visual studio.
                  Non technical skills include an average typing speed of around 80 WPM,
                 and A+ grade writing, public speaking, and english skills through coursework. <br /><br /> I am also interested in adding to my 
                 current skills. Interests include ruby on rails, ASP.NET, Angular, VueJS, and others. 

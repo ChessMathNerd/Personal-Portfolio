@@ -1,0 +1,80 @@
+/* General css */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.css-navbars-wrapper {
+    margin-bottom: 200px;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-top: 20px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.css-h2 {
+    width: fit-content;
+    margin-left: 50px;
+}
+
+.css-navbar-page-wrapper {
+    margin-bottom: 200px;
+}
+
+
+
+
+
+/* container css. This holds the virtual environment that we create the navbars in */
+.css-navbar-container {
+    min-width: 400px;
+    margin-block: 50px;
+    margin-inline: 10vw;
+    aspect-ratio: 16/9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+
+
+
+
+/* top navbar css */
+.css-navbar-top {
+    height: 50px;
+    background-color: rgb(85, 85, 85);
+}
+
+.cssdemo-navbar-button {
+    height: 50px;
+    width: 10%;
+    min-width: 100px;
+    margin: auto;
+}
+
+.cssdemo-navbar-button-3 {
+    position: absolute;
+    left: max(50%, 200px);
+    transform: translate(-max(50%, 200px));
+    margin: auto;
+}
+
+
+
+
+
+
+/* mobile phone */
+@media only screen and (max-width: 700px) {
+    .css-h2 {
+        margin: unset;
+    }
+}

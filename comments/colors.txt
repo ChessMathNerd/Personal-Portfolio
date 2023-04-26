@@ -12,6 +12,9 @@ Greens
 #2cbe44
 #45d14c
 
+Greys
+navbars: background-color: rgb(85, 85, 85);
+
 
 TEXTS
 

@@ -27,22 +27,31 @@ function App() {
   const [nav, setNav] = useState(0);
 
   const show_sidenav = () => {
+    let phone = getComputedStyle(document.querySelector(".sidebar")).maxWidth;
+    console.log(phone)
     document.getElementById("sidebar").style.left = "0px";
-    document.getElementById("welcome").style.marginLeft = "200px";
+    document.getElementById("sidebar").style.visibility = "unset";
     setNav(1);
   }
 
   const hide_sidenav = () => {
-    document.getElementById("sidebar").style.left = "-200px";
-    document.getElementById("welcome").style.marginLeft = "0px";
+    let phone = getComputedStyle(document.querySelector(".sidebar")).maxWidth;
+    console.log(phone)
+    document.getElementById("sidebar").style.left = "-" + phone;
+    document.getElementById("sidebar").style.visibility = "hidden";
     setNav(0);
   }
 
   // subpage router methods
-  const show_main = () => {setPage(0); setSubPage(0)}
-  const show_bio = () => {setPage(0); setSubPage(1)}
-  const show_skills = () => {setPage(0); setSubPage(2)}
-  const show_about = () => {setPage(0); setSubPage(3)}
+  const show_main = () => {
+    setPage(0); setSubPage(0);
+    if (page === 0) {
+      hide_sidenav();
+    }
+  }
+  const show_bio = () => {setPage(0); setSubPage(1); hide_sidenav()}
+  const show_skills = () => {setPage(0); setSubPage(2); hide_sidenav()}
+  const show_about = () => {setPage(0); setSubPage(3); hide_sidenav()}
 
   // page routers methods
   const show_css = () => {setPage(1); setNav(0)}

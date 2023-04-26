@@ -25,6 +25,11 @@
     opacity: .7;
 }
 
+.css-navbar-options-button {
+    cursor: pointer;
+    display: none;
+}
+
 .css-navbar-button {
     width: fit-content;
     border: none;
@@ -39,14 +44,15 @@
 .css-navbar-button-wrapper {
     margin-block: auto;
     margin-inline: auto;
-    transform: translateX(-20px);
+    transform: translateX(-22.5px);
 }
 
 
 
 
 /* Sidebar css */
-.css-sidebar {
+.css-sidebar-pc {
+    visibility: visible;
     overflow-y: auto;
     position: fixed;
     display: flex;
@@ -59,6 +65,24 @@
     background-color: lightgray;
     z-index: 2;
     transition: .3s;
+    border-right: solid lightgray 1px;
+    border-top: solid grey 1px;
+}
+
+.css-sidebar-mobile {
+    transition: none;
+    visibility: hidden;
+    overflow-y: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: -100px;
+    margin-top: 50px;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    z-index: 2;
     border-right: solid lightgray 1px;
     border-top: solid grey 1px;
 }
@@ -94,4 +118,37 @@
 .css-content-wrapper {
     padding-top: 50px;
     padding-left: 200px;
+    overflow-y: auto;
+}
+
+
+
+
+
+/* Mobile phone */
+@media only screen and (max-width: 700px) {
+    .css-sidebar-mobile {
+        transition: none;
+        visibility: visible;
+        left: -100vw;
+        transition: .3s;
+    }
+
+    .css-sidebar-pc {
+        transition: none;
+        visibility: hidden;
+        left: -200px;
+    }
+
+    .css-content-wrapper {
+        padding-inline: 25px;
+    }
+
+    .css-navbar-button-wrapper {
+        transform: none;
+    }
+
+    .css-navbar-options-button {
+        display: block;
+    }
 }

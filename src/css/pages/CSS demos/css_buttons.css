@@ -11,6 +11,7 @@ h1 {
     width: fit-content;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 p {
@@ -216,6 +217,7 @@ p {
     width: 200px;
     height: 200px;
     object-fit: cover;
+    transition: .3s;
 }
 
 .css-image-div {
@@ -352,4 +354,74 @@ p {
 
 .css-special-icon-3 {
     background-color: #e128bf;
+}
+
+
+
+
+
+/* Responsive design! */
+@media only screen and (max-width: 700px) {
+    /* general css */
+    .css-h2 {
+        margin: 0px;
+    }
+
+
+    /* basic display differences */
+    .css-buttons {
+        display: grid;
+    }
+
+    .css-standard, .css-shaped, .css-pressable {
+        width: 200px;
+    }
+
+    .css-special-gradient-3 {
+        background: radial-gradient(
+            #b40db1,
+            #b40db1 40px,
+            #e457ca 130px
+        )
+    }
+
+    .css-special-gradient {
+        width: 200px; 
+    }
+
+    .css-special-icon {
+        width: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) and (min-width: 701px) {
+    .css-image {
+        width: 140px;
+        height: 175px;
+    }
+    
+    .css-image-1-img, .css-image-2-img, .css-image-3-img, .css-image-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .css-image-div {
+        width: 140px;
+        height: 35px;
+    }
+    
+    .css-image-3 {
+        height: 140px;
+    }
+    
+    .css-image-div-text, .css-image-text {
+        font-size: 20px;
+    }
+
+    .css-special-gradient {
+        width: 140px;
+        height: 60px;
+        font-size: 20px;
+    }
 }
