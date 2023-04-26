@@ -106,6 +106,7 @@
 .welcome {
     padding: 50px;
     transition: .3s;
+    height: 100vh;
 }
 
 

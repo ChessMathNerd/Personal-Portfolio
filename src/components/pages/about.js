@@ -11,7 +11,8 @@ const About = () => {
             <p>The latest committed version of the source code can be access via
                 github <a href="https://github.com/ChessMathNerd/Personal-Portfolio">here</a>.
             </p>
-            <p>This website does not currently have full support for mobile devices, although I am working on that.
+            <p>I have done my best to give UI support and responsive design for multiple types of devices and screen sizes. Feel free to 
+                test it out and let me know if something breaks. 
                 The entire system architecture has been designed, developed, tested, and maintained by me. No CSS frameworks, like 
                 Ant, Material UI, or Bootstrap, were used. 
             </p>

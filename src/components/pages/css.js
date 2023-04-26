@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import Constants from "../../services/utils/constants";
 import CSS_Buttons from "./CSS demos/css_buttons";
-import CSS_Images from "./CSS demos/css_images";
 import CSS_Navbars from "./CSS demos/css_navbars";
+import HTML_Forms from "./HTML demos/HTML_Forms";
 
 import "../../css/pages/css.css";
 
@@ -49,7 +49,7 @@ const CSS = (props) => {
                 src={Constants.back_icon} 
                 alt="Not found" title="Back to main"></img>
                 <div className="css-navbar-button-wrapper">
-                    <button className="css-navbar-button">CSS Demos</button>
+                    <button className="css-navbar-button">CSS/HTML Demos</button>
                 </div>
                 <img onClick={(nav === 1) ? hide_nav : show_nav} className="css-navbar-options-button" 
                 src={Constants.hamburger_icon} 
@@ -59,7 +59,7 @@ const CSS = (props) => {
             <div className="css-sidebar-pc" id="css-sidebar-pc">
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Basics</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(1)}>Buttons</label>
-                <label className="css-sidebar-link" onClick={() => change_page(2)}>Images</label>
+                <label className="css-sidebar-link" onClick={() => change_page(2)}>Forms</label>
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Navigation</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(3)}>Top navbars</label>
                 <label className="css-sidebar-link">Bottom navbars</label>
@@ -74,7 +74,7 @@ const CSS = (props) => {
             <div className="css-sidebar-mobile" id="css-sidebar-mobile">
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Basics</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(1)}>Buttons</label>
-                <label className="css-sidebar-link" onClick={() => change_page(2)}>Images</label>
+                <label className="css-sidebar-link" onClick={() => change_page(2)}>Forms</label>
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Navigation</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(3)}>Top navbars</label>
                 <label className="css-sidebar-link">Bottom navbars</label>
@@ -88,7 +88,7 @@ const CSS = (props) => {
 
             <div className="css-content-wrapper">
                 {(page === 1) ? <CSS_Buttons /> : null}
-                {(page === 2) ? <CSS_Images /> : null}
+                {(page === 2) ? <HTML_Forms /> : null}
                 {(page === 3) ? <CSS_Navbars /> : null}
             </div>
         </div>

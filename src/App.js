@@ -5,6 +5,7 @@ import Welcome from './components/pages/welcome';
 import About from './components/pages/about';
 import Skills from './components/pages/skills';
 import CSS from './components/pages/css';
+import Bio from './components/pages/bio';
 
 import "./app.css";
 import Constants from './services/utils/constants';
@@ -55,7 +56,6 @@ function App() {
 
   // page routers methods
   const show_css = () => {setPage(1); setNav(0)}
-  const show_html = () => {setPage(2); setNav(0)}
   const show_js = () => {setPage(3); setNav(0)}
 
   return (
@@ -71,15 +71,14 @@ function App() {
           src={Constants.hamburger_icon} 
           alt="Not found" title="Popout menu"></img>
           <div className="navbar-button-wrapper">
-            <button onClick={show_css} className="navbar-button">CSS</button>
-            <button onClick={show_html} className="navbar-button">HTML</button>
+            <button onClick={show_css} className="navbar-button">CSS/HTML</button>
             <button onClick={show_js} className="navbar-button">JavaScript</button>
           </div>
         </div>
         <div>
-          <div className="welcome" id="welcome">
+          <div className="welcome" id="welcome" onClick={hide_sidenav}>
             {(subpage === 0) ? <Welcome /> : null}
-            {/* {(subpage === 1) ? <Bio />: null} */}
+            {(subpage === 1) ? <Bio />: null}
             {(subpage === 2) ? <Skills />: null}
             {(subpage === 3) ? <About />: null}
           </div>

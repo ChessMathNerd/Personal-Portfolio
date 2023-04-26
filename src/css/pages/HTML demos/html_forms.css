@@ -1,0 +1,150 @@
+/* General css */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-top: 20px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.css-h2 {
+    width: fit-content;
+    margin-left: 50px;
+}
+
+
+
+
+
+/* Form CSS */
+.html-forms-outer-wrapper {
+    width: min(300px, 80%);
+    margin: auto;
+}
+
+.html-forms-outer-wrapper p {
+    font-size: 15px;
+    color: rgb(42, 41, 41);
+}
+
+.html-forms-outer-wrapper select {
+    border: none;
+    outline: none;
+    background-color: rgb(179, 177, 177);
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-block: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4); 
+    appearance: none;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/159/159119.png");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: .7em;
+}
+
+.html-forms-outer-wrapper select:hover, select:active {
+    background-color: rgb(199, 195, 195);
+}
+
+.html-forms-outer-wrapper option {
+    font-size: 15px;
+}
+
+.html-forms-outer-wrapper, .html-forms-labels, .html-forms-inputs, .html-forms-inner-wrapper {
+    display: flex;
+}
+
+.html-forms-labels, .html-forms-inputs, .html-forms-outer-wrapper {
+    flex-direction: column;
+}
+
+.html-forms-labels, .html-forms-inputs {
+    justify-content: space-around;
+}
+
+.html-forms-inner-wrapper {
+    justify-content: space-between;
+}
+
+.html-forms-labels label {
+    font-size: 20px;
+    color: rgb(42, 41, 41);
+}
+
+.html-forms-outer-wrapper input {
+    border: none;
+    outline: none;
+    background-color: rgb(179, 177, 177);
+    height: 30px;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+    margin-block: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4); 
+}
+
+.html-forms-outer-wrapper input:hover {
+    background-color: rgb(199, 195, 195);
+}
+
+.html-forms-outer-wrapper textarea {
+    height: 120px;
+    border: none;
+    outline: none;
+    background-color: rgb(199, 195, 195);
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+    margin-block: 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4); 
+    resize: none;
+    margin-bottom: 25px;
+}
+
+.html-forms-outer-wrapper button {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    border: none;
+    background-color: #45b3d1;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    color:rgb(42, 41, 41)
+}
+
+.html-forms-outer-wrapper button:hover {
+    opacity: .8;
+    transition: .3s;
+}
+
+
+
+
+
+/* mobile */
+@media only screen and (max-width: 400px) {
+    .html-forms-labels {
+        display: none;
+    }
+    
+    .html-forms-inner-wrapper {
+        display: grid;
+        width: fit-content;
+        margin: auto;
+        border: solid black 1px;
+    }
+}
