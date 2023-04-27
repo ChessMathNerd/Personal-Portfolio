@@ -6,18 +6,25 @@ import "../../../css/pages/HTML demos/html_forms.css";
 
 const HTML_Forms = () => {
 
+    // Determines whether or not the user is allowed to send another message
+    const [send, setSend] = useState(1);
+
     const send_message = async () => {
-        let name = document.getElementById("name").value;
-        let phone = document.getElementById("phone").value;
-        let email = document.getElementById("email").value;
-        let company = document.getElementById("company").value;
-        let position = document.getElementById("position").value;
-        let method = document.getElementById("method").value;
-        let specify = document.getElementById("specify").value;
-        let comments = document.getElementById("comments").value;
-        if (name || phone || email || company || position || (method!=="other") || specify || comments) {
-            console.log("checking");
-            await MessageService.post_message(name, phone, email, company, position, method, specify, comments);
+        if (send === 1) {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let company = document.getElementById("company").value;
+            let position = document.getElementById("position").value;
+            let method = document.getElementById("method").value;
+            let specify = document.getElementById("specify").value;
+            let comments = document.getElementById("comments").value;
+            if (name || phone || email || company || position || (method!=="other") || specify || comments) {
+                await MessageService.post_message(name, phone, email, company, position, method, specify, comments);
+                setSend(0);
+                document.getElementById("submit").style.opacity="0.8";
+                document.getElementById("submit").style.cursor="not-allowed";
+            }
         }
     }
 
@@ -56,7 +63,7 @@ const HTML_Forms = () => {
                 <input type="text" id="specify"></input>
                 <p>Anything else you would like to say. </p>
                 <textarea type="text" id="comments"></textarea>
-                <button onClick={send_message}>Send message</button>
+                <button onClick={send_message} id="submit">{(send === 0) ? "Message sent" : "Send message"}</button>
             </div>
         </div>
     )
