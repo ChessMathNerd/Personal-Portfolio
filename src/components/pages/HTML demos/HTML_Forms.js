@@ -31,10 +31,10 @@ const HTML_Forms = () => {
     return (
         <div>
             <h1>Contact me</h1>
-            {/* <p>Found a bug? Got a suggestion? Want to connect? All information is optional and will be sent to me
+            <p>Found a bug? Got a suggestion? Want to connect? All information is optional and will be sent to me
                 using NodeJS RESTful APIs. I am actively looking for ways to improve myself and this site. I am also looking for
                 full-time employment in my field, so if you can help with any of those things, I would appreciate you taking the time to 
-                send me something. Thanks!</p> */}
+                send me something. Thanks!</p>
             <div className="html-forms-outer-wrapper">
                 <div className="html-forms-inner-wrapper">
                     <div className="html-forms-labels">

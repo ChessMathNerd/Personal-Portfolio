@@ -9,7 +9,6 @@ import Bio from './components/pages/bio';
 
 import "./app.css";
 import Constants from './services/utils/constants';
-import HTML_Forms from './components/pages/HTML demos/HTML_Forms';
 
 function App() {
 
@@ -61,12 +60,11 @@ function App() {
 
   return (
     <div className="App">
-      <HTML_Forms />
       {/* Top navbar, this is always here */}
       
 
       {/* the welcome component and its navbar. Only rendered when page == 0 */}
-      {/* {(page === 0) ? 
+      {(page === 0) ? 
       <div>
         <div className="navbar-wrapper">
           <img onClick={(nav === 0) ? show_sidenav : hide_sidenav} className="navbar-ham-button" 
@@ -94,7 +92,7 @@ function App() {
         </div>
       </div> : null
       }
-      {(page === 1) ? <CSS show_main={show_main}/> : null} */}
+      {(page === 1) ? <CSS show_main={show_main}/> : null}
       {/* page === 2: show HTML page */}
       {/* page === 3: show JavaScript page */}
     </div>
