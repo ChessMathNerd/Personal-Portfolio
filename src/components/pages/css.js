@@ -60,28 +60,18 @@ const CSS = (props) => {
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Basics</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(1)}>Buttons</label>
                 <label className="css-sidebar-link" onClick={() => change_page(2)}>Forms</label>
-                <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Navigation</label></div>
-                <label className="css-sidebar-link" onClick={() => change_page(3)}>Top navbars</label>
-                <label className="css-sidebar-link">Side navbars</label>
-                <label className="css-sidebar-link">Dropdowns</label>
-                <label className="css-sidebar-link">Megamenus</label>
-                <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Windows</label></div>
-                <label className="css-sidebar-link">Modals</label>
-                <label className="css-sidebar-link">Popups</label>
+                <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Displays</label></div>
+                <label className="css-sidebar-link" onClick={() => change_page(3)}>Navbars</label>
+                <label className="css-sidebar-link">Windows</label>
             </div>
 
             <div className="css-sidebar-mobile" id="css-sidebar-mobile">
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Basics</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(1)}>Buttons</label>
                 <label className="css-sidebar-link" onClick={() => change_page(2)}>Forms</label>
-                <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Navigation</label></div>
-                <label className="css-sidebar-link" onClick={() => change_page(3)}>Top navbars</label>
-                <label className="css-sidebar-link">Side navbars</label>
-                <label className="css-sidebar-link">Dropdowns</label>
-                <label className="css-sidebar-link">Megamenus</label>
-                <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Windows</label></div>
-                <label className="css-sidebar-link">Modals</label>
-                <label className="css-sidebar-link">Popups</label>
+                <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Displays</label></div>
+                <label className="css-sidebar-link" onClick={() => change_page(3)}>Navbars</label>
+                <label className="css-sidebar-link">Windows</label>
             </div>
 
             <div className="css-content-wrapper">

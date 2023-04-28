@@ -45,9 +45,7 @@ const Skills = () => {
                 and it was the language that made me choose
                 to pursue a degree in computer programming. I have worked with it on and off since then, building video games and UI apps for 
                 file editing (map building), among other things. I am very familiar with the python classes and objects and algorithms. Taking all my work with
-                it together, I have about 3 years time of constantly working with the language. Below you can see a sample of some of the 
-                work I have done with this language.  
-
+                it together, I have about 3 years time of constantly working with the language. 
             </p>
 
 
