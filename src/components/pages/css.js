@@ -62,7 +62,6 @@ const CSS = (props) => {
                 <label className="css-sidebar-link" onClick={() => change_page(2)}>Forms</label>
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Navigation</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(3)}>Top navbars</label>
-                <label className="css-sidebar-link">Bottom navbars</label>
                 <label className="css-sidebar-link">Side navbars</label>
                 <label className="css-sidebar-link">Dropdowns</label>
                 <label className="css-sidebar-link">Megamenus</label>
@@ -77,7 +76,6 @@ const CSS = (props) => {
                 <label className="css-sidebar-link" onClick={() => change_page(2)}>Forms</label>
                 <div className="css-sidebar-label-wrapper"><label className="css-sidebar-label">Navigation</label></div>
                 <label className="css-sidebar-link" onClick={() => change_page(3)}>Top navbars</label>
-                <label className="css-sidebar-link">Bottom navbars</label>
                 <label className="css-sidebar-link">Side navbars</label>
                 <label className="css-sidebar-link">Dropdowns</label>
                 <label className="css-sidebar-link">Megamenus</label>

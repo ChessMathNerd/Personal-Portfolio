@@ -33,13 +33,27 @@ p {
 
 
 
-/* container css. This holds the virtual environment that we create the navbars in */
+/* container and general button css. This holds the virtual environment that we create the navbars in */
 .css-navbar-container {
     margin-block: 50px;
     margin-inline: 10vw;
-    aspect-ratio: 16/9;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
-    position: relative;
+    aspect-ratio: 8/3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    min-width: 500px;
+}
+
+.cssdemo-navbar-button {
+    height: 50px;
+    border: none;
+    background-color: inherit;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cssdemo-navbar-button:hover {
+    color: rgb(174, 171, 171);
 }
 
 
@@ -50,6 +64,8 @@ p {
 .css-navbar-top {
     height: 50px;
     background-color: rgb(85, 85, 85);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .cssdemo-navbar-button {
@@ -60,11 +76,68 @@ p {
 }
 
 .cssdemo-navbar-button-3 {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    float: right;
+    margin-right: min(100% - 300px, calc(50% - 50px));
 }
 
+
+
+
+
+/* dropdown navbar css */
+.css-navbar-dropdown {
+    float: left;
+}
+
+.css-dropdown-button {
+    outline: none;
+    border: none;
+    margin: none;
+    width: 100px;
+    height: 50px;
+    background-color: inherit;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.css-dropdown-button:hover {
+    background-color:rgb(128, 125, 125);
+}
+
+.css-dropdown-links {
+    z-index: 1;
+    position: absolute;
+    display: none;
+    width: 100px;
+}
+
+.css-dropdown-links button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color:rgb(85, 85, 85);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.css-dropdown-links button:hover {
+    background-color:rgb(128, 125, 125);
+}
+
+.css-navbar-dropdown:hover .css-dropdown-links {
+    display: block;
+}
+
+.css-dropdown-padding {
+    margin-top: 8px;
+}
 
 
 
@@ -72,6 +145,10 @@ p {
 
 /* mobile phone */
 @media only screen and (max-width: 700px) {
+    /* button, div {
+        font-size: 15px;
+    } */
+
     .css-h2 {
         margin: unset;
     }
@@ -88,5 +165,19 @@ p {
         min-width: 80px;
         width: 80px;
         height: 40px;
+    }
+
+    .cssdemo-navbar-button-3 {
+        float: right;
+        margin-right: min(100% - 240px, calc(50% - 40px));
+    }
+
+    .css-dropdown-button, .css-dropdown-links a {
+        height: 40px;
+        width: 80px;
+    }
+
+    .css-dropdown-links {
+        width: 80px;
     }
 }
