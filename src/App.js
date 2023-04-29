@@ -5,10 +5,12 @@ import Welcome from './components/pages/welcome';
 import About from './components/pages/about';
 import Skills from './components/pages/skills';
 import CSS from './components/pages/css';
+import JavaScript from './components/pages/javascript';
 import Bio from './components/pages/bio';
 
 import "./app.css";
 import Constants from './services/utils/constants';
+import KeyBoard from './components/pages/JS demos/keyboard';
 
 function App() {
 
@@ -94,7 +96,7 @@ function App() {
       }
       {(page === 1) ? <CSS show_main={show_main}/> : null}
       {/* page === 2: show HTML page */}
-      {/* page === 3: show JavaScript page */}
+      {(page === 3) ? <JavaScript show_main={show_main}/> : null }
     </div>
   );
 }

@@ -31,6 +31,7 @@ const HTML_Forms = () => {
     return (
         <div>
             <h1>Contact me</h1>
+            <h2 style={{margin: "auto"}}>Completed week of 4/23/2023 - 4/29/2023</h2>
             <p>Found a bug? Got a suggestion? Want to connect? All information is optional and will be sent to me
                 using NodeJS RESTful APIs. I am actively looking for ways to improve myself and this site. I am also looking for
                 full-time employment in my field, so if you can help with any of those things, I would appreciate you taking the time to 

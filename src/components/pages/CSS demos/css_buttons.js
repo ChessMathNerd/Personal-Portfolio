@@ -17,6 +17,7 @@ const CSS_Buttons = () => {
     return (
         <div className="css-buttons-wrapper">
             <h1>CSS buttons</h1>
+            <h2 style={{margin: "auto"}}>Completed week of 4/16/2023 - 4/22/2023</h2>
             <h2 className="css-h2">Simple buttons: hoverable, disabled</h2>
             <div className="css-buttons">
                 <button className="css-standard css-standard-1 css-button">Button 1</button>

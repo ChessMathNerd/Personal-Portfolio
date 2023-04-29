@@ -10,6 +10,11 @@ const Constants = {
     home_icon: "https://cdn-icons-png.flaticon.com/512/25/25694.png",
     find_icon: "https://static-00.iconduck.com/assets.00/magnifying-glass-icon-256x256-136bl7ea.png",
     delete_icon: "https://icons.veryicon.com/png/o/commerce-shopping/small-icons-with-highlights/delete-184.png",
+    spacebar_icon: "https://static-00.iconduck.com/assets.00/space-bar-icon-512x192-j26m77mx.png",
+    caps_icon: "https://static-00.iconduck.com/assets.00/keyboard-caps-icon-496x512-xlsmzovc.png",
+    newline_icon: "https://static.thenounproject.com/png/1055530-200.png",
+    backspace_icon: "https://static-00.iconduck.com/assets.00/backspace-icon-512x385-qiaxtk1d.png",
+
 
     // numerical constants
     breakpoint_1: 700

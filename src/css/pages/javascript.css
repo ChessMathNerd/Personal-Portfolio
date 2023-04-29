@@ -1,0 +1,152 @@
+/* Navbar CSS */
+.js-navbar-wrapper {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 50px;
+    background: repeating-linear-gradient(
+        45deg,
+        #45b3d1,
+        #45b3d1 40px,
+        #3193c4 100px,
+        #3193c4 140px,
+        #45b3d1 200px
+    );
+    padding-inline: 5px;
+    display: flex;
+}
+
+.js-navbar-back-button {
+    cursor: pointer;
+    background: none;
+    width: 40px;
+    height: 40px;
+    margin-block: auto;
+    opacity: .7;
+}
+
+.js-navbar-options-button {
+    cursor: pointer;
+    display: none;
+}
+
+.js-navbar-button {
+    width: fit-content;
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: unset;
+}
+
+.js-navbar-button-wrapper {
+    margin-block: auto;
+    margin-inline: auto;
+    transform: translateX(-22.5px);
+}
+
+
+
+
+/* Sidebar css */
+.js-sidebar-pc {
+    visibility: visible;
+    overflow-y: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0px;
+    margin-top: 50px;
+    height: 100vh;
+    width: 200px;
+    background-color: lightgray;
+    z-index: 2;
+    transition: .3s;
+    border-right: solid lightgray 1px;
+    border-top: solid grey 1px;
+}
+
+.js-sidebar-mobile {
+    transition: none;
+    visibility: hidden;
+    overflow-y: auto;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: -100vw;
+    margin-top: 50px;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    z-index: 2;
+    border-right: solid lightgray 1px;
+    border-top: solid grey 1px;
+}
+
+.js-sidebar-label {
+    height: fit-content;
+    width: fit-content;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: auto;
+}
+
+.js-sidebar-label-wrapper {
+    height: 50px;
+    display: flex;
+}
+
+.js-sidebar-link {
+    cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+
+.js-sidebar-link:hover {
+    background-color: #7a7a7a;
+}
+
+
+
+
+
+/* main content css */
+.js-content-wrapper {
+    padding-top: 50px;
+    padding-left: 200px;
+    overflow-y: auto;
+}
+
+
+
+
+
+/* Mobile phone */
+@media only screen and (max-width: 700px) {
+    .js-sidebar-mobile {
+        visibility: visible;
+        transition: .3s;
+    }
+
+    .js-sidebar-pc {
+        transition: none;
+        visibility: hidden;
+        left: -200px;
+    }
+
+    .js-content-wrapper {
+        padding-inline: 25px;
+    }
+
+    .js-navbar-button-wrapper {
+        transform: none;
+    }
+
+    .js-navbar-options-button {
+        display: block;
+    }
+}

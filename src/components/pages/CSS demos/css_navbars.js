@@ -21,6 +21,7 @@ const CSS_Navbars = () => {
     return (
         <div className="css-navbar-page-wrapper">
             <h1>CSS Navigation Bars</h1>
+            <h2 style={{margin: "auto"}}>Completed week of 4/23/2023 - 4/29/2023</h2>
             <p>The demos on this page are designed for PC and some high definition tablets and iPads. Small mobile devices generally
                 use pull-down and slide-in menus instead.
             </p>

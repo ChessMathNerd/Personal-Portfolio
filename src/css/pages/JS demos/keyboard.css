@@ -1,0 +1,154 @@
+/* general css */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.keyboard-wrapper {
+    width: 95%;
+    margin-inline: auto;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    width: font-family;
+    margin-inline: auto;
+}
+
+
+
+
+
+/* keyboard core css */
+.keyboard-core-wrapper button {
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(88, 86, 86);
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.keyboard-core-wrapper button:hover {
+    opacity: .8;
+}
+
+.keyboard-core-layer {
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    margin-inline: auto;
+    margin-bottom: min(1.67%, 10px);
+}
+
+.keyboard-core-layer .keyboard-key-1 {
+    display: inline;
+    width: 8.33%;
+    margin-inline: .835%;
+    aspect-ratio: 8/9;
+}
+
+.keyboard-key-2 {
+    display: inline;
+    width: 13.33%;
+    margin-inline: .835%;
+    aspect-ratio: 13.33/9.37;
+}
+
+.keyboard-key-4 {
+    display: inline;
+    width: 38.33%;
+    margin-inline: .835%;
+    aspect-ratio: 38.33/9.37;
+}
+
+.keyboard-key-3 {
+    display: inline;
+    width: 18.33%;
+    margin-inline: .835%;
+    aspect-ratio: 18.33/9.37;
+}
+
+.keyboard-spacebar-icon {
+    height: 25%;
+    aspect-ratio: 3/1;
+    filter: invert(1);
+}
+
+.keyboard-caps-icon {
+    height: 35%;
+    aspect-ratio: 1/1;
+    filter: invert(1);
+}
+
+.keyboard-enter-icon {
+    height: 45%;
+    aspect-ratio: 1/1;
+    filter: invert(1);
+}
+
+.keyboard-backspace-icon {
+    height: 35%;
+    aspect-ratio: 1.4/1;
+    filter: invert(1);
+}
+
+
+
+
+
+
+/* textarea css */
+.keyboard-ta {
+    resize: none;
+    width: 80%;
+    height: 30vh;
+    margin-block: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(199, 195, 195);
+    border-radius: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4); 
+    overflow-y: auto;
+}
+
+.keyboard-ta-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+/* * {
+    border: solid black 1px;
+} */
+
+
+
+
+
+
+/* mobile devices */
+@media only screen and (max-width: 992px) {
+    .keyboard-core-wrapper button {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .keyboard-core-wrapper button {
+        font-size: 15px;
+        padding: unset;
+    }
+
+    .keyboard-core-layer {
+        width: 100%;
+    }
+
+    .keyboard-ta {
+        width: 99%;
+    }
+}
