@@ -8,6 +8,7 @@ const Pong = () => {
 
     // Controls whether the game is being played or not
     const [playing, setPlaying] = useState(false);
+    const [lost, setLost] = useState(false);
     // Controls the direction of the ball
     // 1 = down, right
     // -1 = up, left
@@ -19,9 +20,10 @@ const Pong = () => {
 
     const game_loop = useEffect(() => {
         setTimeout(() => {
-            if (playing) {
+            if (playing && (!lost)) {
                 try {
                     // update ai paddle
+                    let stopper = false;
                     let height = getComputedStyle(document.querySelector(".pong-canvas")).height;
                     height = (Number)(height.substring(0, height.length - 2));
                     // if ((((ai_paddle_pos + 84) > height) && (dx === 1)) || ((ai_paddle_pos < 4) && (dx === -1))) {
@@ -41,6 +43,9 @@ const Pong = () => {
                     // horizontal wall collision
                     if (((bx+30+4>width) && bdx === 1) || ((bx < 4) && bdx === -1)) {
                         setBdx(-bdx);
+                        setLost(true);
+                        stopper = true;
+                        // setPlaying(false);
                     }
                     // collision with the player's paddle
                     let top = getComputedStyle(document.querySelector(".pong-paddle-player")).top;
@@ -72,6 +77,7 @@ const Pong = () => {
                         catch (e) {}
                         e.stopPropagation();
                     }
+                    if (stopper) document.onmousemove = null;
                 }
                 catch (e) {}
             }
@@ -84,7 +90,11 @@ const Pong = () => {
 
     const start = async () => {
         setPlaying(true);
-        game_loop();
+        setLost(false);
+    }
+
+    const try_again = () => {
+        setPlaying(false);
     }
 
     return (
@@ -93,6 +103,8 @@ const Pong = () => {
                 <div className="pong-canvas" id="pong-canvas">
                     <button className="pong-start-button" style={{visibility: playing ? "hidden" : "visible"}}
                         onClick={start}>Start!</button>
+                    <button className="pong-start-button" style={{visibility: (playing && lost) ? "visible" : "hidden"}}
+                        onClick={try_again}>Try again</button>
                     <div className="pong-paddle-ai" id="ai-paddle"></div>
                     <div className="pong-paddle-player" id="player-paddle"></div>
                     <div className="pong-ball" id="ball" style={{visibility: (!playing) ? "hidden" : "visible"}}></div>
