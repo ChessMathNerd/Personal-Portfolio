@@ -2,6 +2,7 @@ import { useState } from "react";
 
 import Constants from "../../services/utils/constants";
 import KeyBoard from "./JS demos/keyboard.js";
+import Pong from "./JS demos/pong";
 
 import "../../css/pages/javascript.css";
 
@@ -14,6 +15,7 @@ const JavaScript = (props) => {
     const [nav, setNav] = useState(0);
 
     const change_page = (num) => {
+        document.onmousemove = null;
         setPage(num);
         if (window.innerWidth <= Constants.breakpoint_1) {
             hide_nav();
@@ -21,6 +23,7 @@ const JavaScript = (props) => {
     }   
 
     const show_nav = () => {
+        document.onmousemove = null;
         if (window.innerWidth > Constants.breakpoint_1) {
             document.getElementById("js-sidebar-pc").style.left = "0px";
         }
@@ -31,6 +34,7 @@ const JavaScript = (props) => {
     }
 
     const hide_nav = () => {
+        document.onmousemove = null;
         if (window.innerWidth > Constants.breakpoint_1) {
             document.getElementById("js-sidebar-pc").style.left = "-200px";
         }
@@ -40,10 +44,15 @@ const JavaScript = (props) => {
         setNav(0);
     }
 
+    const back = () => {
+        document.onmousemove = null;
+        props.show_main();
+    }
+
     return (
         <div>
             <div className="js-navbar-wrapper">
-                <img onClick={props.show_main} className="js-navbar-back-button" 
+                <img onClick={back} className="js-navbar-back-button" 
                 src={Constants.back_icon} 
                 alt="Not found" title="Back to main"></img>
                 <div className="js-navbar-button-wrapper">
@@ -57,17 +66,20 @@ const JavaScript = (props) => {
             <div className="js-sidebar-pc" id="js-sidebar-pc">
             <div className="js-sidebar-label-wrapper"><label className="js-sidebar-label">Projects</label></div>
                 <label className="js-sidebar-link" onClick={() => change_page(1)}>Keyboard</label>
+                <label className="js-sidebar-link" onClick={() => change_page(2)}>Pong game</label>
                 {/* <label className="js-sidebar-link">Windows</label> */}
             </div>
 
             <div className="js-sidebar-mobile" id="js-sidebar-mobile">
                 <div className="js-sidebar-label-wrapper"><label className="js-sidebar-label">Projects</label></div>
                 <label className="js-sidebar-link" onClick={() => change_page(1)}>Keyboard</label>
+                <label className="js-sidebar-link" onClick={() => change_page(2)}>Pong game</label>
                 {/* <label className="js-sidebar-link">Windows</label> */}
             </div>
 
             <div className="js-content-wrapper">
                 {(page === 1) ? <KeyBoard /> : null}
+                {(page === 2) ? <Pong /> : null}
             </div>
         </div>
     )

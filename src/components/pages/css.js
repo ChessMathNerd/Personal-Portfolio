@@ -49,7 +49,7 @@ const CSS = (props) => {
                 src={Constants.back_icon} 
                 alt="Not found" title="Back to main"></img>
                 <div className="css-navbar-button-wrapper">
-                    <button className="css-navbar-button">CSS/HTML Demos</button>
+                    <button className="css-navbar-button">CSS/HTML</button>
                 </div>
                 <img onClick={(nav === 1) ? hide_nav : show_nav} className="css-navbar-options-button" 
                 src={Constants.hamburger_icon} 

@@ -175,9 +175,16 @@ p {
     .css-dropdown-button, .css-dropdown-links a {
         height: 40px;
         width: 80px;
+        font-size: 15px;
     }
 
     .css-dropdown-links {
         width: 80px;
+    }
+
+    .css-dropdown-links button {
+        width: 80px;
+        height: 40px;
+        font-size: 15px;;
     }
 }
