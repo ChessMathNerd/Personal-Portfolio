@@ -50,14 +50,12 @@ const Pong = () => {
                     // collision with the player's paddle
                     let top = getComputedStyle(document.querySelector(".pong-paddle-player")).top;
                     top = (Number)(top.substring(0, top.length - 2));
-                    if ((bdx === 1) && (Math.abs(top+40 - (by+15)) <= 50) && (bx+30+12+2>width)) {
+                    if ((bdx === 1) && (Math.abs(top+40 - (by+15)) <= 55) && (bx+30+12+2>width)) {
                         setBdx(-bdx);
-                        console.log("player blocked!");
                     }
                     // collision with the ai's paddle
-                    if ((bdx === -1) && (Math.abs(top+40 - (by+15)) <= 50) && (bx<12+2)) {
+                    if ((bdx === -1) && (Math.abs(top+40 - (by+15)) <= 55) && (bx<12+2)) {
                         setBdx(-bdx);
-                        console.log("ai blocked!");
                     }
 
                     setBx(bx + (4*bdx));
